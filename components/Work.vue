@@ -124,6 +124,10 @@ export default {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+p {
+  margin: 30px 0 40px;
+}
+
 .card {
   text-align: center;
   flex-direction: column;

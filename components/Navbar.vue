@@ -11,7 +11,7 @@
               <img
                 src="static/img/icons/emailjs.svg"
                 alt="icon"
-                class="about__icon"
+                class="icon"
                 v-bind="attrs"
                 v-on="on"
               />
@@ -24,7 +24,7 @@
             <img
               src="/img/icons/linkedin.svg"
               alt="icon"
-              class="about__icon"
+              class="icon"
               v-bind="attrs"
               v-on="on"
             />
@@ -36,7 +36,7 @@
             <img
               src="/img/icons/github.svg"
               alt="icon"
-              class="about__icon"
+              class="icon"
               v-bind="attrs"
               v-on="on"
             />

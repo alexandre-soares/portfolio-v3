@@ -37,7 +37,7 @@ p {
   font-family: 'Roboto', sans-serif;
   color: #000;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 48px;
   font-weight: 300;
 }
 
@@ -55,5 +55,18 @@ a {
   background-color: #4cd264;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+button {
+  text-transform: lowercase !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
 }
 </style>

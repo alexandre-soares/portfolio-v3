@@ -6,9 +6,11 @@
         but also <span class="typing"></span>
       </h1>
     </vue-typed-js>
-    <v-chip color="primary" class="mt-6 mb-3 pointer"
-      >contact@alexandresoares.fr</v-chip
-    >
+    <a href="mailto:contact@alexandresoares.fr">
+      <v-btn color="primary" large elevation="2" rounded
+        >contact@alexandresoares.fr</v-btn
+      >
+    </a>
     <p class="d-flex align-center">
       <span class="green-circle"></span>
       Looking for remote works
