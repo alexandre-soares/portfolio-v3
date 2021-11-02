@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - portfolio-v3',
-    title: 'portfolio-v3',
+    titleTemplate: 'Alexandre SOARES - Front End Developer',
+    title: 'Alexandre SOARES - Front End Developer',
     htmlAttrs: {
       lang: 'en',
     },

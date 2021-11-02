@@ -12,13 +12,19 @@ export default {}
 
 <style lang="scss">
 h1 {
-  margin-top: 0 px;
-  margin-bottom: 0 px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: 'Roboto', sans-serif;
   color: #000;
   font-size: 72px;
   line-height: 80px;
   font-weight: 600;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 400;
+  }
 }
 
 h2 {
@@ -27,6 +33,10 @@ h2 {
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 27px;
+  }
 }
 
 p {
@@ -39,6 +49,12 @@ p {
   font-size: 24px;
   line-height: 48px;
   font-weight: 300;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    font-size: 20px;
+    line-height: 36px;
+  }
 }
 
 a {
@@ -61,12 +77,11 @@ a {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-left: 20px;
 }
 
 button {
   text-transform: lowercase !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   font-size: 16px !important;
 }
 </style>

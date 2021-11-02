@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="skills">
     <v-container>
       <h2>Ok great… but how can you help me ?</h2>
       <p class="paragraph">
@@ -7,8 +7,8 @@
         will find a way to help you!
       </p>
 
-      <v-row class="about__cards">
-        <div class="about__card">
+      <v-row class="skills__cards">
+        <div class="skills__card">
           <div class="icons">
             <v-tooltip bottom>
               <template #activator="{ on, attrs }">
@@ -95,15 +95,15 @@
               <span>TailwindCSS</span>
             </v-tooltip>
           </div>
-          <h3 class="about__title">Building a custom responsive website</h3>
-          <p class="about__paragraph">
+          <h3 class="skills__title">Building a custom responsive website</h3>
+          <p class="skills__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
           </p>
         </div>
 
-        <div class="about__card">
+        <div class="skills__card">
           <div class="icons">
             <v-tooltip bottom>
               <template #activator="{ on, attrs }">
@@ -130,15 +130,15 @@
               <span>Netlify</span>
             </v-tooltip>
           </div>
-          <h3 class="about__title">Server / Hosting</h3>
-          <p class="about__paragraph">
+          <h3 class="skills__title">Server / Hosting</h3>
+          <p class="skills__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
           </p>
         </div>
 
-        <div class="about__card">
+        <div class="skills__card">
           <div class="icons">
             <v-tooltip bottom>
               <template #activator="{ on, attrs }">
@@ -165,15 +165,15 @@
               <span>Apollo GraphQL</span>
             </v-tooltip>
           </div>
-          <h3 class="about__title">Apis</h3>
-          <p class="about__paragraph">
+          <h3 class="skills__title">Apis</h3>
+          <p class="skills__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
           </p>
         </div>
 
-        <div class="about__card">
+        <div class="skills__card">
           <div class="icons">
             <v-tooltip bottom>
               <template #activator="{ on, attrs }">
@@ -224,8 +224,8 @@
               <span>Trello</span>
             </v-tooltip>
           </div>
-          <h3 class="about__title">Tools</h3>
-          <p class="about__paragraph">
+          <h3 class="skills__title">Tools</h3>
+          <p class="skills__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
@@ -241,7 +241,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.about {
+.skills {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: black;
@@ -250,12 +250,20 @@ export default {}
   flex-direction: column;
   justify-content: center;
 
+  @media only screen and (max-width: 768px) {
+    padding: 60px 0;
+  }
+
   &__cards {
     display: flex;
     flex-direction: row;
     gap: 64px;
     padding: 12px;
     margin-top: 30px;
+
+    @media only screen and (max-width: 768px) {
+      gap: 24px;
+    }
   }
 
   & h2 {
@@ -292,14 +300,12 @@ export default {}
     font-weight: 300;
   }
 
-  &icons {
+  &__icons {
     margin-bottom: 10px;
   }
+}
 
-  &icon {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-  }
+.icon {
+  margin-right: 10px !important;
 }
 </style>

@@ -2,19 +2,21 @@
   <v-container class="about">
     <h2>Who am I?</h2>
     <p>
-      Hello (again), I’m Romain Paget, I never knew why but the real John
-      Sculley is one of my Facebook and LinkedIn friends, I live in Paris,
-      France since 5 years, I grew up in Normandy but was born in Jura: my heart
-      is a Neufchâtel that makes yellow wine flow in my veins!
+      Hi again! I am Alexandre Soares, Portuguese Front End developer born &
+      raised in Lyon, France, but currently living in Bulgaria for the past 3
+      years.
     </p>
     <p>
-      I'm a designer, with nearly a decade of experience, graduated from
-      Gobelins, Image School, who specialized in digital product design, but
-      curious about a lot of stuff!
+      I studied IT at Uni for 3 years but having still physics lessons didn’t
+      convince me to pursue this way 🤷‍♂️ so I changed for 100% coding education.
+      Since 2018 I’m working with VueJS & NuxtJs between blows of vacuum
+      cleaner.
     </p>
     <p>
-      I’ve worked on a wide range of digital products, for luxury, news,
-      ecommerce, culture and more!
+      I feel relieved when things are structured and optimized in every aspects
+      of my life - especially at work - but I swear I am not a robot (at least I
+      pass the captcha on websites 🤖)! I think my coach secretly tries to kill
+      me everyday at the gym but still obviously failing 😁
     </p>
   </v-container>
 </template>
@@ -25,6 +27,10 @@ export default {}
 
 <style lang="scss" scoped>
 .about {
-    margin: 120px auto;
+  margin: 120px auto;
+
+  @media only screen and (max-width: 768px) {
+    margin: 60px auto;
+  }
 }
 </style>

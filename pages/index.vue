@@ -24,6 +24,11 @@ export default {
     Skills,
     About,
     Footer
+  },
+  data() {
+    return {
+      isActive: false
+    }
   }
 }
 </script>

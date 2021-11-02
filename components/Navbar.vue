@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="justify-space-between my-6">
+    <v-row class="navbar justify-space-between my-6">
       <div>
         <span>Alexandre <strong>SOARES</strong></span>
       </div>
@@ -53,10 +53,12 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon {
   margin-left: 20px;
 }
 </style>
