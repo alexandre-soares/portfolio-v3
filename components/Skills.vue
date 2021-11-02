@@ -8,9 +8,9 @@
         will find a way to help you!
       </p>
 
-      <v-row class="skills__cards">
-        <div class="skills__card">
-          <div class="icons">
+      <v-row class="cards">
+        <div class="card">
+          <div class="card__icons">
             <BaseIcon
               :prettier-name="'Javascript'"
               :name-value="'js.svg'"
@@ -27,7 +27,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -37,7 +37,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -47,7 +47,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -57,7 +57,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -67,7 +67,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -77,20 +77,20 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
           </div>
-          <h3 class="skills__title">Building a custom responsive website</h3>
-          <p class="skills__paragraph">
+          <h3 class="card__title">Building a custom responsive website</h3>
+          <p class="card__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
           </p>
         </div>
 
-        <div class="skills__card">
-          <div class="icons">
+        <div class="card">
+          <div class="card__icons">
             <BaseIcon
               :prettier-name="'NodeJs'"
               :name-value="'nodejs.svg'"
@@ -107,7 +107,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -117,20 +117,20 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
           </div>
-          <h3 class="skills__title">Server / Hosting</h3>
-          <p class="skills__paragraph">
+          <h3 class="card__title">Server / Hosting</h3>
+          <p class="card__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
           </p>
         </div>
 
-        <div class="skills__card">
-          <div class="icons">
+        <div class="card">
+          <div class="card__icons">
             <BaseIcon
               :prettier-name="'GraphQL'"
               :name-value="'graphql.svg'"
@@ -147,20 +147,20 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
           </div>
-          <h3 class="skills__title">Apis</h3>
-          <p class="skills__paragraph">
+          <h3 class="card__title">Apis</h3>
+          <p class="card__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
           </p>
         </div>
 
-        <div class="skills__card">
-          <div class="icons">
+        <div class="card">
+          <div class="card__icons">
             <BaseIcon
               :prettier-name="'VS Code'"
               :name-value="'vscode.svg'"
@@ -177,7 +177,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -187,7 +187,7 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
 
@@ -197,12 +197,12 @@
               :direction="'bottom'"
               :height="30"
               :width="30"
-              :ml="0"
+              :ml="15"
               :mr="15"
             />
           </div>
-          <h3 class="skills__title">Tools</h3>
-          <p class="skills__paragraph">
+          <h3 class="card__title">Tools</h3>
+          <p class="card__paragraph">
             From product design to strategy, design systems, UX or UI. I solve
             complex problems through design, so you can achieve your business
             goals.
@@ -226,9 +226,10 @@ export default {
 
 <style lang="scss" scoped>
 .skills {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
   background-color: black;
+  color: #fff;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,11 +237,11 @@ export default {
   @media only screen and (max-width: 768px) {
     padding: 60px 24px;
   }
+}
 
-  &__cards {
+.cards {
     display: flex;
-    flex-direction: row;
-    gap: 64px;
+    gap: 48px 96px;
     padding: 12px;
     margin-top: 30px;
 
@@ -251,39 +252,26 @@ export default {
     }
   }
 
-  & h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 700;
-    color: #fff;
-  }
-
+ .card {
   &__title {
     margin: 16px 0;
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-    color: #fff;
-  }
-
-  & p {
-    margin-bottom: 32px;
-    color: #fff;
   }
 
   &__paragraph {
     max-width: 400px;
-    margin-top: 4px;
-    margin-bottom: 0px;
     color: #a1a1a6 !important;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
     font-weight: 300;
   }
 
   &__icons {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
   }
-}
+ }
 </style>

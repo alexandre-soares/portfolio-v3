@@ -15,68 +15,48 @@
         >
       </a>
       <div class="d-flex align-items-center">
-        <v-tooltip bottom>
-          <template #activator="{ on, attrs }">
-            <a
-              target="_blank"
-              class="download"
-              href="/CV Alexandre SOARES 2021.pdf"
-            >
-              <img
-                src="@/static/img/icons/download.png"
-                alt="icon"
-                class="icon"
-                v-bind="attrs"
-                v-on="on"
-              />
-            </a>
-          </template>
-          <span>Download my resume</span>
-        </v-tooltip>
-        <v-tooltip bottom>
-          <template #activator="{ on, attrs }">
-            <a
-              href="https://www.linkedin.com/in/alex-ds-soares/"
-              target="_blank"
-            >
-              <img
-                src="/img/icons/linkedin.svg"
-                alt="icon"
-                class="icon"
-                v-bind="attrs"
-                v-on="on"
-              />
-            </a>
-          </template>
-          <span>Linkedin</span>
-        </v-tooltip>
-        <v-tooltip bottom>
-          <template #activator="{ on, attrs }">
-            <a href="https://github.com/alexandre-soares" target="_blank">
-              <img
-                src="/img/icons/github.svg"
-                alt="icon"
-                class="icon"
-                v-bind="attrs"
-                v-on="on"
-              />
-            </a>
-          </template>
-          <span>Github</span>
-        </v-tooltip>
+        <BaseIconLink
+          :prettier-name="'Download my resume'"
+          :filename="'download'"
+          :type="'png'"
+          :link="'/CV Alexandre SOARES 2021.pdf'"
+          :height="30"
+          :width="30"
+          :ml="20"
+          :mr="20"
+        />
+
+        <BaseIconLink
+          :prettier-name="'LinkedIn'"
+          :filename="'linkedin'"
+          :type="'svg'"
+          :link="'https://www.linkedin.com/in/alex-ds-soares/'"
+          :height="30"
+          :width="30"
+          :ml="20"
+          :mr="20"
+        />
+
+        <BaseIconLink
+          :prettier-name="'Github'"
+          :filename="'github'"
+          :type="'svg'"
+          :link="'https://github.com/alexandre-soares'"
+          :height="30"
+          :width="30"
+          :ml="20"
+          :mr="20"
+        />
       </div>
     </div>
   </v-container>
 </template>
 
 <script>
+import BaseIconLink from './icons/BaseIconLink.vue'
 export default {
   name: 'Footer',
-  methods: {
-    darkMode() {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
-    }
-  }
+  components: { BaseIconLink }
 }
 </script>
 

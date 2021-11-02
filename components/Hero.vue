@@ -70,13 +70,4 @@ h1 {
     height: 50vh;
   }
 }
-
-p {
-  display: flex;
-  align-items: center;
-
-  @media only screen and (max-width: 768px) {
-    justify-content: center;
-  }
-}
 </style>

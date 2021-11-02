@@ -25,7 +25,6 @@ export default {
   props: [
     'nameValue',
     'prettierName',
-    'direction',
     'height',
     'width',
     'ml',
@@ -38,9 +37,6 @@ export default {
       },
       prettierName() {
         return this.prettierName
-      },
-      direction() {
-        return this.direction
       },
       height() {
         return this.height
@@ -59,4 +55,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+  cursor: pointer;
+}
+</style>

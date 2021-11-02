@@ -3,12 +3,6 @@
     <!-- Laura's Portfolio -->
     <div
       class="card"
-      :style="{
-        'background-image':
-          'url(' +
-          require('@/static/img/portfolio/art-board-studio/laura-sibille-feature.png') +
-          ')'
-      }"
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="0"
@@ -50,12 +44,6 @@
     <!-- Requiem's Blog -->
     <div
       class="card"
-      :style="{
-        'background-image':
-          'url(' +
-          require('@/static/img/portfolio/art-board-studio/requiem-blog-featured-image.png') +
-          ')'
-      }"
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="200"
@@ -74,7 +62,7 @@
         target="_blank"
         class="card__github ma-6"
         href="https://github.com/alexandre-soares/joker-blog"
-        >Github</a
+        >Find the Github here</a
       >
 
       <div class="card__skills">
@@ -103,12 +91,6 @@
     <!-- Invoice App -->
     <div
       class="card"
-      :style="{
-        'background-image':
-          'url(' +
-          require('@/static/img/portfolio/art-board-studio/invoice-app-feature.png') +
-          ')'
-      }"
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="0"
@@ -126,7 +108,7 @@
         target="_blank"
         class="card__github ma-6"
         href="https://github.com/alexandre-soares/vuejs-invoice-app"
-        >Github</a
+        >Find the Github here</a
       >
 
       <div class="card__skills">
@@ -155,12 +137,6 @@
     <!-- Music Player -->
     <div
       class="card"
-      :style="{
-        'background-image':
-          'url(' +
-          require('@/static/img/portfolio/art-board-studio/music-player-feature.png') +
-          ')'
-      }"
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="200"
@@ -178,7 +154,7 @@
         target="_blank"
         class="card__github ma-6"
         href="https://github.com/alexandre-soares/vuejs-music-app"
-        >Github</a
+        >Find the Github here</a
       >
 
       <div class="card__skills">
@@ -197,12 +173,6 @@
     <!-- Weather App -->
     <div
       class="card"
-      :style="{
-        'background-image':
-          'url(' +
-          require('@/static/img/portfolio/art-board-studio/weather-app-feature.png') +
-          ')'
-      }"
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="400"
@@ -220,7 +190,7 @@
         target="_blank"
         class="card__github ma-6"
         href="https://github.com/alexandre-soares/vuejs-weather-app"
-        >Github</a
+        >Find the Github here</a
       >
 
       <div class="card__skills">
@@ -256,7 +226,7 @@
     >
       <video autoplay muted loop class="card__video">
         <source
-          src="@/static/img/portfolio/art-board-studio/netflix-feature.webm"
+          src="@/static/img/portfolio/netflix-feature.webm"
           type="video/webm"
         />
       </video>
@@ -273,7 +243,7 @@
         target="_blank"
         class="card__github ma-6"
         href="https://github.com/alexandre-soares/netflix-movie-app-nuxtjs"
-        >Github</a
+        >Find the Github here</a
       >
 
       <div class="card__skills">
@@ -298,116 +268,15 @@
         />
       </div>
     </div>
-
-    <!-- 
-          <div
-      v-for="project in projects"
-      :key="project.id"
-      class="card"
-      :style="{ 'background-image': 'url(' + project.thumbnail + ')' }"
-    >
-      <span class="card__label">{{ project.type }}</span>
-      <h3 class="card__title">{{ project.name }}</h3>
-      <a target="_blank" class="card__website ma-6" :href="project.website"
-        >Discover the project</a
-      >
-      <a
-        v-if="project.github"
-        target="_blank"
-        class="card__github ma-6"
-        :href="project.github"
-        >Find the project on Github</a
-      >
-    </div>
-       -->
   </div>
 </template>
 
 <script>
-import { v1 as uuidv4 } from 'uuid'
 import BaseIcon from '../icons/BaseIcon.vue'
 
 export default {
   name: 'WorkGrid',
-  components: { BaseIcon },
-  data() {
-    return {
-      projects: [
-        {
-          id: uuidv4(),
-          name: "Laura SIBILLE's Portfolio",
-          skills: ['nuxtjs', 'sass'],
-          type: 'Front End Website',
-          website: 'https://www.laurasibille.com/',
-          description: `
-          This is the website I created for the UX-UI Designer Laura SIBILLE.
-          `,
-          thumbnail: require('@/static/img/portfolio/laura-sibille-feature.png')
-        },
-        {
-          id: uuidv4(),
-          name: `Requiem's Blog`,
-          skills: ['vuejs', 'firebase', 'crud'],
-          type: 'Full Stack App',
-          website: 'https://joker-s-blog.web.app/',
-          github: 'https://github.com/alexandre-soares/joker-blog',
-          description: `
-          A blog where you can find some interesting articles about video games.
-          `,
-          thumbnail: require('@/static/img/portfolio/requiem-blog-featured-image.png')
-        },
-        {
-          id: uuidv4(),
-          name: 'Invoice App',
-          skills: ['vuejs', 'vuex', 'firebase'],
-          type: 'Full Stack App',
-          description: `
-          An Invoice app with realtime update connected with Firebase.
-          `,
-          website: 'https://vuejs-invoice-app.web.app/',
-          github: 'https://github.com/alexandre-soares/vuejs-invoice-app',
-          thumbnail: require('@/static/img/portfolio/invoice-app-feature.png')
-        },
-        {
-          id: uuidv4(),
-          name: 'Music Player',
-          skills: ['vuejs'],
-          type: 'Front End App',
-          website: 'https://elastic-euler-fa1143.netlify.app',
-          github: 'https://github.com/alexandre-soares/vuejs-music-app',
-          description: `
-          A music player made with VueJS. Manipulation of audio files. (Desktop Only)
-          `,
-          thumbnail: require('@/static/img/portfolio/music-player-feature.png')
-        },
-        {
-          id: uuidv4(),
-          name: 'Weather App',
-          skills: ['vuejs', 'firebase', 'crud'],
-          type: 'Full Stack App',
-          description: `
-          An app where you can check the weather. The app is connected with Firebase.
-          `,
-          website: 'https://vuejs-weather-app-7dab4.web.app/',
-          github: 'https://github.com/alexandre-soares/vuejs-weather-app',
-          thumbnail: require('@/static/img/portfolio/weather-app-feature.png')
-        },
-        {
-          id: uuidv4(),
-          name: 'Netflix Movie Api',
-          skills: ['vuejs', 'axios'],
-          type: 'Front End App',
-          website: 'https://quirky-hugle-b33382.netlify.app',
-          github:
-            'https://github.com/alexandre-soares/netflix-movie-app-nuxtjs',
-          description: `
-          A Netflix visual connected with a movie api to display a list of movies.
-          `,
-          thumbnail: require('@/static/img/portfolio/netflix-feature.png')
-        }
-      ]
-    }
-  }
+  components: { BaseIcon }
 }
 </script>
 
@@ -418,14 +287,10 @@ export default {
   grid-row-gap: 24px;
   grid-template-columns: repeat(6, 1fr);
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
   }
-}
-
-p {
-  margin: 30px 0 40px;
 }
 
 .card {
@@ -445,32 +310,41 @@ p {
   &:nth-child(1) {
     grid-row: 1;
     grid-column: 1 / 4;
+    background-image: url('@/static/img/portfolio/laura-sibille-feature.png');
   }
 
   &:nth-child(2) {
     grid-column: 4 / 7;
     grid-row: 1;
+    background-image: url('@/static/img/portfolio/requiem-blog-featured-image.png');
   }
 
   &:nth-child(3) {
     grid-row: 2;
     grid-column: 1 / 3;
+    background-image: url('@/static/img/portfolio/invoice-app-feature.png');
   }
 
   &:nth-child(4) {
     grid-row: 2;
     grid-column: 3 / 5;
+    background-image: url('@/static/img/portfolio/music-player-feature.png');
   }
 
   &:nth-child(5) {
     grid-row: 2;
     grid-column: 5 / 7;
+    background-image: url('@/static/img/portfolio/weather-app-feature.png');
   }
 
   &:nth-child(6) {
     min-height: 650px;
     grid-row: 3;
     grid-column: 1 / 7;
+
+      @media only screen and (max-width: 992px) {
+      min-height: 450px;
+    }
 
     @media only screen and (max-width: 768px) {
       min-height: 350px;
@@ -517,10 +391,9 @@ p {
   }
 
   &__title {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.97);
     margin: 20px auto;
     width: 89%;
-    opacity: 0.97;
     font-size: 48px;
     line-height: 48px;
     font-weight: 800;
@@ -536,25 +409,18 @@ p {
 
 a {
   display: inline-block;
-  margin-top: 0px;
-  margin-right: 16px;
-  margin-bottom: 0px;
+  margin: 0 16px 0;
   padding: 8px 20px;
   border-radius: 100px;
   background-color: #fff;
   color: #000 !important;
   font-size: 16px;
   line-height: 24px;
-  cursor: pointer;
   transition: all 0.2s ease-in;
 
   &:hover {
     color: #fff !important;
     background-color: rgb(155, 155, 155);
   }
-}
-
-.icon {
-  margin: 0 10px !important;
 }
 </style>
