@@ -36,8 +36,19 @@ export default {
   plugins: [
     { src: '~/plugins/luxy.js', mode: 'client' },
     { src: '~/plugins/aos.js', mode: 'client' },
-    { src: '~plugins/ga.js', mode: 'client' }
+    { src: '~plugins/ga.js', mode: 'client' },
   ],
+
+  // Router
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/index.vue'),
+      })
+    },
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
