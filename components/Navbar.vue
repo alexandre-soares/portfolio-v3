@@ -33,50 +33,17 @@
         }"
         transition="fade-transition"
       >
-        <div class="d-flex align-items-center">
-          <BaseIconLink
-            :prettier-name="'Download my resume'"
-            :filename="'download'"
-            :type="'png'"
-            :link="'/CV Alexandre SOARES 2021.pdf'"
-            :height="30"
-            :width="30"
-            :ml="20"
-            :mr="20"
-          />
-
-          <BaseIconLink
-            :prettier-name="'LinkedIn'"
-            :filename="'linkedin'"
-            :type="'svg'"
-            :link="'https://www.linkedin.com/in/alex-ds-soares/'"
-            :height="30"
-            :width="30"
-            :ml="20"
-            :mr="20"
-          />
-
-          <BaseIconLink
-            :prettier-name="'Github'"
-            :filename="'github'"
-            :type="'svg'"
-            :link="'https://github.com/alexandre-soares'"
-            :height="30"
-            :width="30"
-            :ml="20"
-            :mr="0"
-          />
-        </div>
+        <SocialMedias />
       </v-lazy>
     </div>
   </v-container>
 </template>
 
 <script>
-import BaseIconLink from './icons/BaseIconLink.vue'
+import SocialMedias from './SocialMedias.vue'
 export default {
   name: 'Navbar',
-  components: { BaseIconLink },
+  components: { SocialMedias },
   data() {
     return {
       isActive: false
@@ -104,7 +71,7 @@ export default {
     align-items: center;
     color: #000;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
     font-weight: 600;
 
     & img {

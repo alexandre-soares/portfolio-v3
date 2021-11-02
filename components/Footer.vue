@@ -14,49 +14,18 @@
           >✉️ contact@alexandresoares.fr</v-btn
         >
       </a>
-      <div class="d-flex align-items-center">
-        <BaseIconLink
-          :prettier-name="'Download my resume'"
-          :filename="'download'"
-          :type="'png'"
-          :link="'/CV Alexandre SOARES 2021.pdf'"
-          :height="30"
-          :width="30"
-          :ml="20"
-          :mr="20"
-        />
 
-        <BaseIconLink
-          :prettier-name="'LinkedIn'"
-          :filename="'linkedin'"
-          :type="'svg'"
-          :link="'https://www.linkedin.com/in/alex-ds-soares/'"
-          :height="30"
-          :width="30"
-          :ml="20"
-          :mr="20"
-        />
-
-        <BaseIconLink
-          :prettier-name="'Github'"
-          :filename="'github'"
-          :type="'svg'"
-          :link="'https://github.com/alexandre-soares'"
-          :height="30"
-          :width="30"
-          :ml="20"
-          :mr="20"
-        />
-      </div>
+      <SocialMedias />
+   
     </div>
   </v-container>
 </template>
 
 <script>
-import BaseIconLink from './icons/BaseIconLink.vue'
+import SocialMedias from "./SocialMedias.vue";
 export default {
-  name: 'Footer',
-  components: { BaseIconLink }
+    name: "Footer",
+    components: { SocialMedias }
 }
 </script>
 
@@ -76,12 +45,5 @@ export default {
     }
   }
 }
-.icon {
-  margin: 0 20px;
-}
 
-a {
-  text-align: center;
-  height: auto !important;
-}
 </style>

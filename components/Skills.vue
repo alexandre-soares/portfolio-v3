@@ -1,7 +1,9 @@
 <template>
   <div class="skills">
     <v-container>
-      <h2>My weapons to make UX designs a reality <span class="emojis">⚔️</span></h2>
+      <h2>
+        My weapons to make UX designs a reality <span class="emojis">⚔️</span>
+      </h2>
 
       <p>
         With my motivation to succeed, to help and to make things greater, I
@@ -78,14 +80,14 @@
           <p class="card__paragraph">
             Vue.js is a <strong>progressive JavaScript framework,</strong> which
             is used to <strong>build UIs (User Interfaces)</strong> and
-            <strong>SPAs (Single-page Applications).</strong> This framework is
-            famous for its <strong>fast-paced learning curve.</strong> This
-            <strong>component-based approach</strong> was basically inspired by
-            and picked from the ReactJS. We write code in the form of
-            <strong>components</strong> to <strong>import</strong> that
-            component and <strong>reuse</strong> it wherever we need it. It
-            offers a single-file component, which makes it
-            <strong>a loosely coupled and reusable code.</strong>
+            <strong>SPAs (Single-page Applications).</strong> With its
+            <strong>component-based approach,</strong> the framework allows us
+            to <strong>import</strong> components and
+            <strong>reuse</strong> them wherever we need it. Combined with a
+            <strong>powerful CSS framework</strong> like
+            <strong>Vuetify</strong> or <strong>TailwindCSS</strong>, developers
+            are provided with all the tools they need to build
+            <strong>rich and engaging user experiences.</strong>
           </p>
         </div>
 
@@ -131,14 +133,11 @@
 
           <p class="card__paragraph">
             Node.js is a <strong>fast, lightweight and efficient</strong> run
-            time open source development platform for
-            <strong>executing JavaScript</strong> code server-side. It is the
-            greatest tool for
-            <strong>building real-time web applications</strong> and
-            <strong>provides cross-platform applications</strong> which run
-            easily on any web. Combine this with the power of
-            <strong>Netlify or Heroku,</strong> deploying and managing apps have
-            never been so easy!
+            time open source development platform used to
+            <strong>build real-time, cross-platform, web applications.</strong
+            >Combine this with the power of
+            <strong>Netlify or Heroku,</strong>and deploying/managing apps has
+            never been that easy!
           </p>
         </div>
 
@@ -162,16 +161,17 @@
               :mr="15"
             />
           </div>
-          <h3 class="card__title">Apis</h3>
+          <h3 class="card__title">Querying APIs / Third Party APIs</h3>
           <p class="card__paragraph">
             GraphQL is a <strong>query language</strong> for APIs and a runtime
             for <strong>fulfilling those queries</strong> with your existing
             data. GraphQL provides a
             <strong>complete and understandable</strong> description of the data
             in your API, gives clients the <strong>power to ask</strong> for
-            exactly what <strong>they need</strong> and nothing more, makes it
-            <strong>easier to evolve</strong> APIs over time, and enables
-            powerful developer tools.
+            exactly what <strong>they need.</strong>
+            <strong>Third party APIs</strong> are APIs provided by third parties
+            to allow you <strong>to access their functionality</strong> via
+            JavaScript and use it on your site.
           </p>
         </div>
 
@@ -213,14 +213,18 @@
               :mr="15"
             />
           </div>
-          <h3 class="card__title">Tools</h3>
+          <h3 class="card__title">Development and Agile Tools</h3>
           <p class="card__paragraph">
             Web development is a <strong>continuous lifecycle</strong> involving
-            multiple stages and iterations. From
-            <strong>choosing a programming language</strong>, an appropriate
-            <strong>framework</strong>, to finding a
-            <strong>supportive webserver</strong> to host your application on,
-            it requires a lot of work. Those tools are designed to
+            multiple stages and iterations. Agile methodology
+            <strong>increases performance</strong> and
+            <strong>delivers valuable products</strong> by adapting to
+            <strong>changing events</strong> in the workplace. They
+            <strong>ensure a quick response </strong>to changes in every stage
+            of production, including <strong>team communication,</strong>
+            <strong>task management,</strong>
+            <strong>issue tracking,</strong> and
+            <strong>knowledge sharing.</strong> Those tools are designed to
             <strong>simplify and streamline</strong> the development lifecycle
             for web developers without compromising on performance.
           </p>

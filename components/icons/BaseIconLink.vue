@@ -3,22 +3,7 @@
     <template #activator="{ on, attrs }">
       <a :href="link" target="_blank">
         <img
-          v-if="type === 'png'"
-          :src="'/img/icons/' + filename + '.png'"
-          alt="icon"
-          v-bind="attrs"
-          :style="{
-            height: height + 'px',
-            width: width + 'px',
-            marginLeft: ml + 'px',
-            marginRight: mr + 'px'
-          }"
-          v-on="on"
-        />
-
-        <img
-          v-else
-          :src="'/img/icons/' + filename + '.svg'"
+          :src="'/img/icons/' + filename"
           alt="icon"
           v-bind="attrs"
           :style="{
@@ -38,16 +23,7 @@
 <script>
 export default {
   name: 'BaseIconLink',
-  props: [
-    'filename',
-    'prettierName',
-    'link',
-    'type',
-    'height',
-    'width',
-    'ml',
-    'mr'
-  ],
+  props: ['filename', 'prettierName', 'link', 'height', 'width', 'ml', 'mr'],
   metaInfo() {
     return {
       filename() {
@@ -55,9 +31,6 @@ export default {
       },
       prettierName() {
         return this.prettierName
-      },
-      type() {
-        return this.type
       },
       link() {
         return this.link

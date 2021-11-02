@@ -1,8 +1,8 @@
 <template>
   <v-container class="about">
-    <h2>Who am I? <span class="emojis">😈</span></h2>
+    <h2>Who am I?<span class="emojis">😈</span></h2>
     <p>
-      Hi again! I am Alexandre Soares, Portuguese
+      Hi again! I am Alexandre Soares, portuguese
       <strong>Front End developer</strong> born & raised in Lyon, France, but
       currently <strong>living in Bulgaria</strong> for the past 3 years.
     </p>
