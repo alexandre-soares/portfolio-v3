@@ -2,49 +2,72 @@
   <v-container>
     <div class="navbar my-6">
       <div class="navbar__brand">
-        <img src="@/static/alex-2.png" alt="pic" />
-        <span
-          >Alexandre SOARES, <br />
-          Smiling since 1996 😎</span
+        <v-lazy
+          v-model="isActive"
+          :options="{
+            threshold: 0.5
+          }"
+          transition="fade-transition"
         >
-      </div>
-      <div class="d-flex align-items-center">
-        <BaseIconLink
-          :prettier-name="'Download my resume'"
-          :filename="'download'"
-          :type="'png'"
-          :link="'/CV Alexandre SOARES 2021.pdf'"
-          :direction="'bottom'"
-          :height="30"
-          :width="30"
-          :ml="20"
-          :mr="20"
-        />
+          <img src="@/static/alex-2.png" alt="pic" />
+        </v-lazy>
 
-        <BaseIconLink
-          :prettier-name="'LinkedIn'"
-          :filename="'linkedin'"
-          :type="'svg'"
-          :link="'https://www.linkedin.com/in/alex-ds-soares/'"
-          :direction="bottom"
-          :height="30"
-          :width="30"
-          :ml="20"
-          :mr="20"
-        />
-
-        <BaseIconLink
-          :prettier-name="'Github'"
-          :filename="'github'"
-          :type="'svg'"
-          :link="'https://github.com/alexandre-soares'"
-          :direction="bottom"
-          :height="30"
-          :width="30"
-          :ml="20"
-          :mr="20"
-        />
+        <v-lazy
+          v-model="isActive"
+          :options="{
+            threshold: 0.5
+          }"
+          transition="fade-transition"
+        >
+          <span
+            >Alexandre SOARES, <br />
+            Smiling since 1996 😎</span
+          >
+        </v-lazy>
       </div>
+
+      <v-lazy
+        v-model="isActive"
+        :options="{
+          threshold: 0.5
+        }"
+        transition="fade-transition"
+      >
+        <div class="d-flex align-items-center">
+          <BaseIconLink
+            :prettier-name="'Download my resume'"
+            :filename="'download'"
+            :type="'png'"
+            :link="'/CV Alexandre SOARES 2021.pdf'"
+            :height="30"
+            :width="30"
+            :ml="20"
+            :mr="20"
+          />
+
+          <BaseIconLink
+            :prettier-name="'LinkedIn'"
+            :filename="'linkedin'"
+            :type="'svg'"
+            :link="'https://www.linkedin.com/in/alex-ds-soares/'"
+            :height="30"
+            :width="30"
+            :ml="20"
+            :mr="20"
+          />
+
+          <BaseIconLink
+            :prettier-name="'Github'"
+            :filename="'github'"
+            :type="'svg'"
+            :link="'https://github.com/alexandre-soares'"
+            :height="30"
+            :width="30"
+            :ml="20"
+            :mr="0"
+          />
+        </div>
+      </v-lazy>
     </div>
   </v-container>
 </template>
@@ -53,7 +76,12 @@
 import BaseIconLink from './icons/BaseIconLink.vue'
 export default {
   name: 'Navbar',
-  components: { BaseIconLink }
+  components: { BaseIconLink },
+  data() {
+    return {
+      isActive: false
+    }
+  }
 }
 </script>
 

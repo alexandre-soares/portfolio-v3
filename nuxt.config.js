@@ -11,7 +11,19 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: `FRONT END DEVELOPER - My name is Alexandre Soares and I'm a front end web developer.`,
+      },
+      {
+        property: 'og:title',
+        content: 'Alexandre Soares - Front End Developer Portfolio',
+      },
+      {
+        property: 'og:description',
+        content: `FRONT END DEVELOPER - My name is Alexandre Soares and I'm a front end web developer.`,
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -24,6 +36,7 @@ export default {
   plugins: [
     { src: '~/plugins/luxy.js', mode: 'client' },
     { src: '~/plugins/aos.js', mode: 'client' },
+    { src: '~plugins/ga.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,7 +60,7 @@ export default {
       light: true,
       themes: {
         light: {
-          primary: colors.blue.darken2,
+          primary: colors.blue.darken3,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
         },
@@ -56,5 +69,15 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    collapseBooleanAttributes: true,
+    decodeEntities: true,
+    minifyCSS: true,
+    minifyJS: true,
+    processConditionalComments: true,
+    removeEmptyAttributes: true,
+    removeRedundantAttributes: true,
+    trimCustomFragments: true,
+    useShortDoctype: true,
+  },
 }
