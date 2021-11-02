@@ -56,6 +56,15 @@ a {
   text-decoration: none;
 }
 
+// Emojis
+
+.emojis {
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+// Container
+
 .container {
   max-width: 1440px;
   padding-right: 100px;
@@ -69,6 +78,8 @@ a {
     padding: 12px 24px;
   }
 }
+
+// Available for remote work
 
 .availability {
   font-size: 16px;
@@ -90,7 +101,7 @@ a {
   margin-right: 10px;
 }
 
-// BUTTONS
+// Buttons
 
 button {
   text-transform: lowercase !important;

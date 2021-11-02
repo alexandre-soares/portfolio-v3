@@ -1,6 +1,6 @@
 <template>
   <v-container class="work">
-    <h2 class="slide-in-bottom">Some of my work</h2>
+    <h2 class="slide-in-bottom">Some of my work <spa class="emojis">🖥</spa></h2>
     <p class="paragraph slide-in-bottom">
       Throughout the years I've been working with interesting clients & several
       exciting projects ideas, and here are some of them:
