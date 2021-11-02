@@ -6,7 +6,7 @@
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="0"
-      data-aos-duration="1000"
+      data-aos-duration="1700"
     >
       <span class="card__label">Front End Website</span>
 
@@ -47,7 +47,7 @@
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="200"
-      data-aos-duration="1000"
+      data-aos-duration="1700"
     >
       <span class="card__label">Full Stack App</span>
 
@@ -94,7 +94,7 @@
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="0"
-      data-aos-duration="1000"
+      data-aos-duration="1700"
     >
       <span class="card__label">Full Stack App</span>
       <h3 class="card__title">Invoice App</h3>
@@ -140,7 +140,7 @@
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="200"
-      data-aos-duration="1000"
+      data-aos-duration="1700"
     >
       <span class="card__label">Front End App</span>
       <h3 class="card__title">Music Player</h3>
@@ -176,7 +176,7 @@
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="400"
-      data-aos-duration="1000"
+      data-aos-duration="1700"
     >
       <span class="card__label">Full Stack App</span>
       <h3 class="card__title">Weather App</h3>
@@ -222,7 +222,7 @@
       data-aos="slide-up"
       data-aos-offset="300"
       data-aos-delay="0"
-      data-aos-duration="1000"
+      data-aos-duration="1700"
     >
       <video autoplay muted loop class="card__video">
         <source
@@ -342,7 +342,7 @@ export default {
     grid-row: 3;
     grid-column: 1 / 7;
 
-      @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 992px) {
       min-height: 450px;
     }
 
@@ -397,7 +397,7 @@ export default {
     font-size: 48px;
     line-height: 48px;
     font-weight: 800;
-    text-shadow: 0 1px 3px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 6%);
+    text-shadow: 0 1px 10px rgb(0 0 0 / 20%), 1px 1px 5px rgb(0 0 0 / 16%);
 
     @media only screen and (max-width: 768px) {
       font-size: 36px;
@@ -419,8 +419,8 @@ a {
   transition: all 0.2s ease-in;
 
   &:hover {
-    color: #fff !important;
-    background-color: rgb(155, 155, 155);
+    transform: translateY(-5px);
+    background-color: #f0efef;
   }
 }
 </style>

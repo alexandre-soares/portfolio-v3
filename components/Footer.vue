@@ -1,7 +1,7 @@
 <template>
   <v-container class="footer">
     <h2 class="availability">
-      <span class="green-circle"></span>Available for remote work
+      <span class="green-circle"></span>Available for remote positions
     </h2>
     <p>
       I’d be happy to hear from you if you are interested on my profile! Don't

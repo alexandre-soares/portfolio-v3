@@ -11,6 +11,10 @@ export default {}
 </script>
 
 <style lang="scss">
+.v-application {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
   margin: 0;
   font-size: 72px;
@@ -66,6 +70,18 @@ a {
   }
 }
 
+.availability {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
 .green-circle {
   height: 15px;
   width: 15px;
@@ -74,20 +90,15 @@ a {
   margin-right: 10px;
 }
 
+// BUTTONS
+
 button {
   text-transform: lowercase !important;
   font-size: 16px !important;
-}
+  transition: all 0.3s ease-in;
 
-.availability {
-  font-size: 14px;
-  color: #000;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-
-  @media only screen and (max-width: 768px) {
-    justify-content: center;
+  &:hover {
+    transform: translateY(-5px);
   }
 }
 </style>
