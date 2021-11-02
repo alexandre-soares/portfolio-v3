@@ -3,26 +3,26 @@
     <vue-typed-js
       :strings="strings"
       :loop="true"
-      :type-speed="50"
-      :back-speed="50"
+      :type-speed="40"
+      :back-speed="40"
       :bind-input-focus-events="true"
       :cursor-char="'|'"
       :back-delay="1000"
       :start-delay="1000"
     >
-      <h1>
+      <h1 class="slide-in-bottom">
         Hi! I'm a VueJS Developer<br />
         but also <span class="typing"></span>
       </h1>
     </vue-typed-js>
 
-    <a href="mailto:contact@alexandresoares.fr">
+    <a href="mailto:contact@alexandresoares.fr" class="slide-in-bottom">
       <v-btn color="primary" large elevation="2" rounded class="mt-12 mb-1"
         >✉️ contact@alexandresoares.fr</v-btn
       >
     </a>
 
-    <p>
+    <p class="slide-in-bottom availability">
       <span class="green-circle"></span>
       Looking for remote works
     </p>
@@ -39,10 +39,10 @@ export default {
     return {
       strings: [
         'a huge video games fan 🎮',
-        'an optimiser freak 📦', 
-        'a problem solver 💡!',
-        'a cleaning addict 🧹!',
-        'a gym rat 🏋️‍♂️',
+        'an optimiser freak 📦',
+        'a problem solver 💡',
+        'a cleaning addict 🧹',
+        'a gym rat 🏋️‍♂️'
       ]
     }
   }
@@ -61,22 +61,22 @@ export default {
     height: auto;
     align-items: center;
   }
+}
 
-  & h1 {
-    height: auto;
+h1 {
+  height: auto;
 
-    @media only screen and (max-width: 768px) {
-      height: 50vh;
-    }
+  @media only screen and (max-width: 768px) {
+    height: 50vh;
   }
+}
 
-  & p {
-    display: flex;
-    align-items: center;
+p {
+  display: flex;
+  align-items: center;
 
-    @media only screen and (max-width: 768px) {
-      justify-content: center;
-    }
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
   }
 }
 </style>

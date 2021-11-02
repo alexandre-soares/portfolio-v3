@@ -9,8 +9,13 @@
           require('@/static/img/portfolio/art-board-studio/laura-sibille-feature.png') +
           ')'
       }"
+      data-aos="slide-up"
+      data-aos-offset="300"
+      data-aos-delay="0"
+      data-aos-duration="1000"
     >
       <span class="card__label">Front End Website</span>
+
       <h3 class="card__title">UX Designer - Portfolio</h3>
       <a
         href="https://www.laurasibille.com/"
@@ -18,6 +23,28 @@
         class="card__website ma-6"
         >Discover the project</a
       >
+
+      <div class="card__skills">
+        <BaseIcon
+          :prettier-name="'NuxtJs'"
+          :name-value="'nuxtjs.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+
+        <BaseIcon
+          :prettier-name="'Sass'"
+          :name-value="'sass.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+      </div>
     </div>
 
     <!-- Requiem's Blog -->
@@ -29,8 +56,13 @@
           require('@/static/img/portfolio/art-board-studio/requiem-blog-featured-image.png') +
           ')'
       }"
+      data-aos="slide-up"
+      data-aos-offset="300"
+      data-aos-delay="200"
+      data-aos-duration="1000"
     >
       <span class="card__label">Full Stack App</span>
+
       <h3 class="card__title">Requiem's Blog</h3>
       <a
         href="https://joker-s-blog.web.app/"
@@ -44,6 +76,28 @@
         href="https://github.com/alexandre-soares/joker-blog"
         >Github</a
       >
+
+      <div class="card__skills">
+        <BaseIcon
+          :prettier-name="'VueJs'"
+          :name-value="'vuejs.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+
+        <BaseIcon
+          :prettier-name="'Firebase'"
+          :name-value="'firebase.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+      </div>
     </div>
 
     <!-- Invoice App -->
@@ -55,6 +109,10 @@
           require('@/static/img/portfolio/art-board-studio/invoice-app-feature.png') +
           ')'
       }"
+      data-aos="slide-up"
+      data-aos-offset="300"
+      data-aos-delay="0"
+      data-aos-duration="1000"
     >
       <span class="card__label">Full Stack App</span>
       <h3 class="card__title">Invoice App</h3>
@@ -70,6 +128,28 @@
         href="https://github.com/alexandre-soares/vuejs-invoice-app"
         >Github</a
       >
+
+      <div class="card__skills">
+        <BaseIcon
+          :prettier-name="'VueJs'"
+          :name-value="'vuejs.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+
+        <BaseIcon
+          :prettier-name="'Firebase'"
+          :name-value="'firebase.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+      </div>
     </div>
 
     <!-- Music Player -->
@@ -81,6 +161,10 @@
           require('@/static/img/portfolio/art-board-studio/music-player-feature.png') +
           ')'
       }"
+      data-aos="slide-up"
+      data-aos-offset="300"
+      data-aos-delay="200"
+      data-aos-duration="1000"
     >
       <span class="card__label">Front End App</span>
       <h3 class="card__title">Music Player</h3>
@@ -96,6 +180,18 @@
         href="https://github.com/alexandre-soares/vuejs-music-app"
         >Github</a
       >
+
+      <div class="card__skills">
+        <BaseIcon
+          :prettier-name="'VueJs'"
+          :name-value="'vuejs.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+      </div>
     </div>
 
     <!-- Weather App -->
@@ -107,6 +203,10 @@
           require('@/static/img/portfolio/art-board-studio/weather-app-feature.png') +
           ')'
       }"
+      data-aos="slide-up"
+      data-aos-offset="300"
+      data-aos-delay="400"
+      data-aos-duration="1000"
     >
       <span class="card__label">Full Stack App</span>
       <h3 class="card__title">Weather App</h3>
@@ -122,10 +222,38 @@
         href="https://github.com/alexandre-soares/vuejs-weather-app"
         >Github</a
       >
+
+      <div class="card__skills">
+        <BaseIcon
+          :prettier-name="'VueJs'"
+          :name-value="'vuejs.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+
+        <BaseIcon
+          :prettier-name="'Firebase'"
+          :name-value="'firebase.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+      </div>
     </div>
 
     <!-- Netflix Movie Api -->
-    <div class="card">
+    <div
+      class="card"
+      data-aos="slide-up"
+      data-aos-offset="300"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+    >
       <video autoplay muted loop class="card__video">
         <source
           src="@/static/img/portfolio/art-board-studio/netflix-feature.webm"
@@ -147,6 +275,28 @@
         href="https://github.com/alexandre-soares/netflix-movie-app-nuxtjs"
         >Github</a
       >
+
+      <div class="card__skills">
+        <BaseIcon
+          :prettier-name="'VueJs'"
+          :name-value="'vuejs.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+
+        <BaseIcon
+          :prettier-name="'Firebase'"
+          :name-value="'firebase.svg'"
+          :direction="'top'"
+          :height="40"
+          :width="40"
+          :ml="10"
+          :mr="10"
+        />
+      </div>
     </div>
 
     <!-- 
@@ -175,9 +325,11 @@
 
 <script>
 import { v1 as uuidv4 } from 'uuid'
+import BaseIcon from '../icons/BaseIcon.vue'
 
 export default {
   name: 'WorkGrid',
+  components: { BaseIcon },
   data() {
     return {
       projects: [
@@ -203,19 +355,6 @@ export default {
           A blog where you can find some interesting articles about video games.
           `,
           thumbnail: require('@/static/img/portfolio/requiem-blog-featured-image.png')
-        },
-        {
-          id: uuidv4(),
-          name: 'Netflix Movie Api',
-          skills: ['vuejs', 'axios'],
-          type: 'Front End App',
-          website: 'https://quirky-hugle-b33382.netlify.app',
-          github:
-            'https://github.com/alexandre-soares/netflix-movie-app-nuxtjs',
-          description: `
-          A Netflix visual connected with a movie api to display a list of movies.
-          `,
-          thumbnail: require('@/static/img/portfolio/netflix-feature.png')
         },
         {
           id: uuidv4(),
@@ -252,6 +391,19 @@ export default {
           website: 'https://vuejs-weather-app-7dab4.web.app/',
           github: 'https://github.com/alexandre-soares/vuejs-weather-app',
           thumbnail: require('@/static/img/portfolio/weather-app-feature.png')
+        },
+        {
+          id: uuidv4(),
+          name: 'Netflix Movie Api',
+          skills: ['vuejs', 'axios'],
+          type: 'Front End App',
+          website: 'https://quirky-hugle-b33382.netlify.app',
+          github:
+            'https://github.com/alexandre-soares/netflix-movie-app-nuxtjs',
+          description: `
+          A Netflix visual connected with a movie api to display a list of movies.
+          `,
+          thumbnail: require('@/static/img/portfolio/netflix-feature.png')
         }
       ]
     }
@@ -287,7 +439,7 @@ p {
   overflow: hidden;
 
   @media only screen and (max-width: 768px) {
-    min-height: auto;
+    min-height: 350px;
   }
 
   &:nth-child(1) {
@@ -316,8 +468,13 @@ p {
   }
 
   &:nth-child(6) {
+    min-height: 650px;
     grid-row: 3;
     grid-column: 1 / 7;
+
+    @media only screen and (max-width: 768px) {
+      min-height: 350px;
+    }
   }
 
   &__video {
@@ -327,17 +484,30 @@ p {
     height: 100%;
     width: 100%;
     z-index: -1;
-    transform: scale(1.1);
+    transform: scale(1.2) translateX(-20px);
 
     @media only screen and (max-width: 768px) {
-      transform: scale(1.5) translateY(-25px);
+      transform: scale(2) translateX(-10px) translateY(-25px);
+    }
+  }
+
+  &__skills {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & img {
+      margin: 0 10px !important;
     }
   }
 
   &__label {
     display: inline-block;
-    margin: 40px 0px 20px;
-    padding: 4px 16px;
+    margin: 40px 0px 5px;
+    padding: 4px 24px;
     border-radius: 100px;
     background-color: hsla(0, 0%, 100%, 0.5);
     font-size: 12px;
@@ -347,42 +517,44 @@ p {
   }
 
   &__title {
+    color: #fff;
     margin: 20px auto;
     width: 89%;
-    color: hsla(0, 0%, 100%, 0.97);
+    opacity: 0.97;
     font-size: 48px;
     line-height: 48px;
     font-weight: 800;
-    text-align: center;
     text-shadow: 0 1px 3px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 6%);
-  }
 
-  &__website {
-    display: inline-block;
-    margin-top: 0px;
-    margin-right: 16px;
-    margin-bottom: 0px;
-    padding: 8px 16px;
-    border-radius: 100px;
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-    display: inline-block;
+    @media only screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 48px;
+      font-weight: 800;
+    }
   }
+}
 
-  &__github {
-    display: inline-block;
-    margin: 0 16px 0 0;
-    padding: 8px 16px;
-    border-radius: 100px;
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
-    display: inline-block;
+a {
+  display: inline-block;
+  margin-top: 0px;
+  margin-right: 16px;
+  margin-bottom: 0px;
+  padding: 8px 20px;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #000 !important;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: #fff !important;
+    background-color: rgb(155, 155, 155);
   }
+}
+
+.icon {
+  margin: 0 10px !important;
 }
 </style>

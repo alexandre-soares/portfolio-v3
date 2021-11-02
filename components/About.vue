@@ -29,6 +29,10 @@ export default {}
 .about {
   margin: 120px auto;
 
+  & h2 {
+    margin-bottom: 40px;
+  }
+
   @media only screen and (max-width: 768px) {
     margin: 60px auto;
   }

@@ -2,6 +2,7 @@
   <div class="skills">
     <v-container>
       <h2>Ok great… but how can you help me ?</h2>
+
       <p class="paragraph">
         With my motivation to succeed, to help and to make things greater, I
         will find a way to help you!
@@ -10,90 +11,75 @@
       <v-row class="skills__cards">
         <div class="skills__card">
           <div class="icons">
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/js.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Javscript</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/vuejs.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>VueJs</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/nuxtjs.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>NuxtJs</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/sass.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Sass</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/vuetify.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Vuetify</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/bootstrap.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Bootstrap</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/tailwindcss.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>TailwindCSS</span>
-            </v-tooltip>
+            <BaseIcon
+              :prettier-name="'Javascript'"
+              :name-value="'js.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'VueJs'"
+              :name-value="'vuejs.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'NuxtJs'"
+              :name-value="'nuxtjs.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Sass'"
+              :name-value="'sass.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Vuetify'"
+              :name-value="'vuetify.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Bootstrap'"
+              :name-value="'bootstrap.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'TailwindCSS'"
+              :name-value="'tailwindcss.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
           </div>
           <h3 class="skills__title">Building a custom responsive website</h3>
           <p class="skills__paragraph">
@@ -105,30 +91,35 @@
 
         <div class="skills__card">
           <div class="icons">
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/nodejs.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>NodeJs</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/netlify.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Netlify</span>
-            </v-tooltip>
+            <BaseIcon
+              :prettier-name="'NodeJs'"
+              :name-value="'nodejs.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Firebase'"
+              :name-value="'firebase.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Netlify'"
+              :name-value="'netlify.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
           </div>
           <h3 class="skills__title">Server / Hosting</h3>
           <p class="skills__paragraph">
@@ -140,30 +131,25 @@
 
         <div class="skills__card">
           <div class="icons">
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/graphql.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>GraphQL</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/apollo-graphql.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Apollo GraphQL</span>
-            </v-tooltip>
+            <BaseIcon
+              :prettier-name="'GraphQL'"
+              :name-value="'graphql.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Apollo GraphQL'"
+              :name-value="'apollo-graphql.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
           </div>
           <h3 class="skills__title">Apis</h3>
           <p class="skills__paragraph">
@@ -175,54 +161,45 @@
 
         <div class="skills__card">
           <div class="icons">
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/vscode.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Visual Studio Code</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/git.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Git</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/jira.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Jira</span>
-            </v-tooltip>
-            <v-tooltip bottom>
-              <template #activator="{ on, attrs }">
-                <img
-                  src="/img/icons/trello.svg"
-                  alt="icon"
-                  class="icon"
-                  v-bind="attrs"
-                  v-on="on"
-                />
-              </template>
-              <span>Trello</span>
-            </v-tooltip>
+            <BaseIcon
+              :prettier-name="'VS Code'"
+              :name-value="'vscode.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Git'"
+              :name-value="'git.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Jira'"
+              :name-value="'jira.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
+
+            <BaseIcon
+              :prettier-name="'Trello'"
+              :name-value="'trello.svg'"
+              :direction="'bottom'"
+              :height="30"
+              :width="30"
+              :ml="0"
+              :mr="15"
+            />
           </div>
           <h3 class="skills__title">Tools</h3>
           <p class="skills__paragraph">
@@ -237,7 +214,14 @@
 </template>
 
 <script>
-export default {}
+import BaseIcon from './icons/BaseIcon.vue'
+
+export default {
+  name: 'Skills',
+  components: {
+    BaseIcon
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -245,13 +229,12 @@ export default {}
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: black;
-  color: white !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 60px 0;
+    padding: 60px 24px;
   }
 
   &__cards {
@@ -262,32 +245,31 @@ export default {}
     margin-top: 30px;
 
     @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
       gap: 24px;
     }
   }
 
   & h2 {
     font-family: 'Roboto', sans-serif;
-    color: #fff;
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
+    color: #fff;
   }
 
   &__title {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 16px;
-    margin-bottom: 0px;
-    color: #fff;
+    margin: 16px 0;
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
+    color: #fff;
   }
 
   & p {
-    color: #fff;
     margin-bottom: 32px;
+    color: #fff;
   }
 
   &__paragraph {
@@ -303,9 +285,5 @@ export default {}
   &__icons {
     margin-bottom: 10px;
   }
-}
-
-.icon {
-  margin-right: 10px !important;
 }
 </style>
