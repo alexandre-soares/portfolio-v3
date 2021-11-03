@@ -14,20 +14,11 @@
         <div class="card">
           <div class="card__icons">
             <BaseIcon
-              :prettier-name="'Javascript'"
-              :name-value="'js.svg'"
-              :height="30"
-              :width="30"
-              :ml="0"
-              :mr="15"
-            />
-
-            <BaseIcon
               :prettier-name="'VueJs'"
               :name-value="'vuejs.svg'"
               :height="30"
               :width="30"
-              :ml="15"
+              :ml="0"
               :mr="15"
             />
 
@@ -66,15 +57,6 @@
               :ml="15"
               :mr="15"
             />
-
-            <BaseIcon
-              :prettier-name="'TailwindCSS'"
-              :name-value="'tailwindcss.svg'"
-              :height="30"
-              :width="30"
-              :ml="15"
-              :mr="15"
-            />
           </div>
           <h3 class="card__title">Front End Tools</h3>
           <p class="card__paragraph">
@@ -85,7 +67,7 @@
             to <strong>import</strong> components and
             <strong>reuse</strong> them wherever we need it. Combined with a
             <strong>powerful CSS framework</strong> like
-            <strong>Vuetify</strong> or <strong>TailwindCSS</strong>, developers
+            <strong>Vuetify</strong> or <strong>Bootstrap</strong>, developers
             are provided with all the tools they need to build
             <strong>rich and engaging user experiences.</strong>
           </p>
@@ -134,9 +116,9 @@
           <p class="card__paragraph">
             Node.js is a <strong>fast, lightweight and efficient</strong> run
             time open source development platform used to
-            <strong>build real-time, cross-platform, web applications.</strong
-            >Combine this with the power of
-            <strong>Netlify or Heroku,</strong>and deploying/managing apps has
+            <strong>build real-time, cross-platform, web applications.</strong>
+            Combine this with the power of
+            <strong>Netlify or Heroku </strong>and deploying/managing apps has
             never been that easy!
           </p>
         </div>
@@ -258,6 +240,10 @@ export default {
   @media only screen and (max-width: 768px) {
     padding: 60px 24px;
   }
+
+  @media only screen and (max-width: 479px) {
+    padding: 50px 16px;
+  }
 }
 
 .cards {
@@ -270,6 +256,10 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+  }
+
+  @media only screen and (max-width: 479px) {
+    justify-content: center;
   }
 }
 
@@ -290,6 +280,11 @@ export default {
     line-height: 28px;
     font-weight: 300;
     text-align: justify;
+
+    @media only screen and (max-width: 479px) {
+      width: 100%;
+      max-width: none;
+    }
   }
 
   &__icons {

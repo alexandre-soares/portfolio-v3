@@ -307,6 +307,10 @@ export default {
     min-height: 350px;
   }
 
+  @media only screen and (max-width: 479px) {
+    height: 400px;
+  }
+
   &:nth-child(1) {
     grid-row: 1;
     grid-column: 1 / 4;
@@ -349,6 +353,11 @@ export default {
     @media only screen and (max-width: 768px) {
       min-height: 350px;
     }
+
+
+    @media only screen and (max-width: 479px) {
+      min-height: 400px;
+    }
   }
 
   &__video {
@@ -362,6 +371,10 @@ export default {
 
     @media only screen and (max-width: 768px) {
       transform: scale(2) translateX(-10px) translateY(-25px);
+    }
+
+    @media only screen and (max-width: 479px) {
+      transform: scale(2.8) translateX(-5px) translateY(-25px);
     }
   }
 

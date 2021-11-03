@@ -22,9 +22,10 @@ h1 {
   font-weight: 600;
 
   @media only screen and (max-width: 768px) {
-    font-size: 48px;
-    line-height: 70px;
-    font-weight: 400;
+    height: 180px;
+    margin: 0px;
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
@@ -76,6 +77,10 @@ a {
 
   @media only screen and (max-width: 768px) {
     padding: 12px 24px;
+  }
+
+  @media only screen and (max-width: 479px) {
+    padding: 12px 16px;
   }
 }
 
