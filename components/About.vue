@@ -7,7 +7,7 @@
       currently <strong>living in Bulgaria</strong> for the past 3 years.
     </p>
     <p>
-      I studied IT at Uni for 3 years but having still physics lessons didn’t
+      I studied IT at Uni for 3 years but having still chemistry lessons didn’t
       convince me to pursue this way 🤷‍♂️ so I changed for 100% web development
       education.
     </p>
