@@ -17,7 +17,7 @@
     </vue-typed-js>
 
     <a href="mailto:contact@alexandresoares.fr" class="slide-in-bottom">
-      <v-btn color="primary" large elevation="10" rounded class="mt-12 mb-1"
+      <v-btn color="primary" large elevation="2" rounded class="mt-12 mb-1"
         >✉️ contact@alexandresoares.fr</v-btn
       >
     </a>

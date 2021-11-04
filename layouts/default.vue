@@ -67,20 +67,20 @@ a {
 // Container
 
 .container {
-  max-width: 1440px;
-  padding-right: 100px;
-  padding-left: 100px;
+  max-width: 1440px !important;
+  padding-right: 100px !important;
+  padding-left: 100px !important;
 
   @media only screen and (max-width: 1200px) {
-    padding: 12px 48px;
+    padding: 12px 48px !important;
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 12px 24px;
+    padding: 12px 24px !important;
   }
 
   @media only screen and (max-width: 479px) {
-    padding: 12px 16px;
+    padding: 12px 16px !important;
   }
 }
 
