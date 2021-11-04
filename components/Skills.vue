@@ -279,7 +279,6 @@ export default {
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
-    text-align: justify;
 
     @media only screen and (max-width: 479px) {
       width: 100%;

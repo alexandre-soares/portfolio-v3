@@ -36,6 +36,8 @@ export default {}
 
   @media only screen and (max-width: 768px) {
     margin: 60px auto;
+    padding: 12px 36px !important;
+    text-align: justify;
   }
 }
 
