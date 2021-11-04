@@ -224,11 +224,18 @@
       data-aos-delay="0"
       data-aos-duration="1700"
     >
-      <video autoplay muted loop class="card__video">
-        <source
-          src="@/static/img/portfolio/netflix-feature.webm"
-          type="video/webm"
-        />
+      <video
+        autoplay
+        muted
+        loop
+        playsInline
+        controls
+        src="@/static/img/portfolio/netflix-feature.mp4"
+        type="video/mp4"
+        class="card__video"
+      >
+        <!-- fallback -->
+        <p>Your browser does not support HTML5 video.</p>
       </video>
 
       <span class="card__label">Front End App</span>
@@ -345,6 +352,7 @@ export default {
     min-height: 650px;
     grid-row: 3;
     grid-column: 1 / 7;
+    background-image: url('@/static/img/portfolio/netflix-feature.png');
 
     @media only screen and (max-width: 992px) {
       min-height: 450px;
@@ -353,7 +361,6 @@ export default {
     @media only screen and (max-width: 768px) {
       min-height: 350px;
     }
-
 
     @media only screen and (max-width: 479px) {
       min-height: 400px;
@@ -374,7 +381,7 @@ export default {
     }
 
     @media only screen and (max-width: 479px) {
-      transform: scale(2.8) translateX(-5px) translateY(-25px);
+      transform: scale(2.8) translateX(-6px) translateY(-25px);
     }
   }
 
