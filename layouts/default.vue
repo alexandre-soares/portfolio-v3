@@ -47,7 +47,7 @@ p {
   font-weight: 300;
 
   @media only screen and (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     font-size: 20px;
     line-height: 36px;
   }

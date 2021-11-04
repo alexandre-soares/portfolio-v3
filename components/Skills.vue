@@ -2,7 +2,7 @@
   <div class="skills">
     <v-container>
       <h2>
-        My weapons to make UX designs a reality <span class="emojis">⚔️</span>
+        My weapons to make designs a reality <span class="emojis">⚔️</span>
       </h2>
 
       <p>
