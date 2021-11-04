@@ -225,6 +225,7 @@
       data-aos-duration="1700"
     >
       <video
+        v-if="!isSafari"
         autoplay
         muted
         loop
@@ -283,7 +284,15 @@ import BaseIcon from '../icons/BaseIcon.vue'
 
 export default {
   name: 'WorkGrid',
-  components: { BaseIcon }
+  components: { BaseIcon },
+  data() {
+    return {
+      isSafari: false
+    }
+  },
+  mounted() {
+    this.isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+  }
 }
 </script>
 
