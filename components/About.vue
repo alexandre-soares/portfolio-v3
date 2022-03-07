@@ -33,6 +33,7 @@ export default {}
 <style lang="scss" scoped>
 .about {
   margin: 120px auto;
+  z-index: 1000;
 
   @media only screen and (max-width: 768px) {
     margin: 60px auto;

@@ -1,5 +1,6 @@
 <template>
   <div id="luxy">
+    <Loader v-if="isLoading" />
     <Navbar />
     <Hero />
     <Work />
@@ -10,12 +11,13 @@
 </template>
 
 <script>
-import Skills from '../components/Skills.vue'
-import Hero from '../components/Hero.vue'
-import Navbar from '../components/Navbar.vue'
-import Work from '../components/Work.vue'
-import About from '../components/About.vue'
-import Footer from '../components/Footer.vue'
+import Skills from '@/components/Skills.vue'
+import Hero from '@/components/Hero.vue'
+import Navbar from '@/components/Navbar.vue'
+import Work from '@/components/Work.vue'
+import About from '@/components/About.vue'
+import Footer from '@/components/Footer.vue'
+import Loader from '@/components/Loader.vue'
 export default {
   components: {
     Navbar,
@@ -23,12 +25,18 @@ export default {
     Work,
     Skills,
     About,
-    Footer
+    Footer,
+    Loader
   },
   data() {
     return {
-      isActive: false
+      isLoading: true
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false
+    }, 3000)
   }
 }
 </script>

@@ -26,7 +26,23 @@ export default {
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/favicon/apple-touch-icon.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '180x180',
+        href: '/favicon/favicon-32x32.png',
+      },
+      {
+        rel: 'manifest',
+        href: '/favicon/site.webmanifest',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

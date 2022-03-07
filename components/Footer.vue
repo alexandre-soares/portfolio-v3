@@ -1,7 +1,8 @@
 <template>
   <v-container class="footer">
     <h2 class="availability">
-      <span class="green-circle"></span>Available for remote positions
+      <span class="green-circle pulse"></span>Available for
+      <strong class="mx-1">remote</strong> positions
     </h2>
     <p>
       I’d be happy to hear from you if you are interested on my profile! Don't
@@ -9,12 +10,7 @@
     </p>
 
     <div class="footer__actions">
-      <a href="mailto:contact@alexandresoares.fr">
-        <v-btn color="primary" large elevation="2" rounded
-          >✉️ contact@alexandresoares.fr</v-btn
-        >
-      </a>
-
+      <Contact />
       <SocialMedias />
     </div>
   </v-container>
@@ -22,9 +18,10 @@
 
 <script>
 import SocialMedias from './SocialMedias.vue'
+import Contact from './Contact.vue'
 export default {
   name: 'Footer',
-  components: { SocialMedias }
+  components: { SocialMedias, Contact }
 }
 </script>
 

@@ -2,48 +2,27 @@
   <v-container>
     <div class="navbar my-6">
       <div class="navbar__brand">
-        <v-lazy
-          v-model="isActive"
-          :options="{
-            threshold: 0.5
-          }"
-          transition="fade-transition"
-        >
-          <img src="@/static/alex-2.png" alt="pic" />
-        </v-lazy>
+        <img src="@/static/alex.png" alt="pic" />
 
-        <v-lazy
-          v-model="isActive"
-          :options="{
-            threshold: 0.5
-          }"
-          transition="fade-transition"
+        <span
+          >Alexandre SOARES, <br />
+          Smiling since 1996 😎</span
         >
-          <span
-            >Alexandre SOARES, <br />
-            Smiling since 1996 😎</span
-          >
-        </v-lazy>
       </div>
 
-      <v-lazy
-        v-model="isActive"
-        :options="{
-          threshold: 0.5
-        }"
-        transition="fade-transition"
-      >
+      <LazyHydrate when-visible>
         <SocialMedias />
-      </v-lazy>
+      </LazyHydrate>
     </div>
   </v-container>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration'
 import SocialMedias from './SocialMedias.vue'
 export default {
   name: 'Navbar',
-  components: { SocialMedias },
+  components: { SocialMedias, LazyHydrate },
   data() {
     return {
       isActive: false

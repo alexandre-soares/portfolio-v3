@@ -11,6 +11,15 @@ export default {}
 </script>
 
 <style lang="scss">
+body {
+  background-color: #f5f8fa !important;
+}
+
+.theme--light.v-application {
+  background-color: #f5f8fa !important;
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .v-application {
   font-family: 'Open Sans', sans-serif;
 }
@@ -22,8 +31,6 @@ h1 {
   font-weight: 600;
 
   @media only screen and (max-width: 768px) {
-    height: 180px;
-    margin: 0px;
     font-size: 40px;
     line-height: 50px;
   }
@@ -57,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
 // Emojis
 
 .emojis {
@@ -103,7 +114,22 @@ a {
   width: 15px;
   background-color: #4cd264;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+.pulse {
+  background-color: 4cd264;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 2px #4cd264;
+  }
+  100% {
+    box-shadow: 0 0 0 10px transparent;
+  }
 }
 
 // Buttons

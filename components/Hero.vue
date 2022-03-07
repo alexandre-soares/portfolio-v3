@@ -1,57 +1,27 @@
 <template>
-  <v-container class="hero">
-    <vue-typed-js
-      :strings="strings"
-      :loop="true"
-      :type-speed="40"
-      :back-speed="40"
-      :bind-input-focus-events="true"
-      :cursor-char="'|'"
-      :back-delay="1000"
-      :start-delay="1000"
-    >
-      <h1 class="slide-in-bottom">
-        Hi! I'm a VueJS Developer<br />
-        but also <span class="typing"></span>
-      </h1>
-    </vue-typed-js>
+  <v-container class="hero slide-in-bottom">
+    <h1>Hi! I'm a VueJS Developer!</h1>
 
-    <a href="mailto:contact@alexandresoares.fr" class="slide-in-bottom">
-      <v-btn color="primary" large elevation="2" rounded class="mt-12 mb-1"
-        >✉️ contact@alexandresoares.fr</v-btn
-      >
-    </a>
+    <Contact />
 
-    <p class="slide-in-bottom availability">
-      <span class="green-circle"></span>
-      Looking for remote positions
+    <p class="availability">
+      <span class="green-circle pulse"></span>
+      Looking for <strong class="mx-1">remote</strong> positions
     </p>
   </v-container>
 </template>
 
 <script>
-import { VueTypedJs } from 'vue-typed-js'
+import Contact from './Contact.vue'
 export default {
-  components: {
-    VueTypedJs
-  },
-  data() {
-    return {
-      strings: [
-        'a huge video games fan 🎮',
-        'an optimiser freak 📦',
-        'a problem solver 💡',
-        'a cleaning addict 🧹',
-        'a gym rat 🏋️‍♂️'
-      ]
-    }
-  }
+  name: 'Hero',
+  components: { Contact }
 }
 </script>
 
 <style lang="scss" scoped>
 .hero {
-  height: 70vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,13 +31,13 @@ export default {
     height: auto;
     align-items: center;
   }
+
+  &__btn {
+    margin: 24px 0;
+  }
 }
 
 h1 {
-  height: auto;
-
-  @media only screen and (max-width: 768px) {
-    height: 250px;
-  }
+  padding: 32px 0;
 }
 </style>

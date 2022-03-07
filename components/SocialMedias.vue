@@ -3,7 +3,7 @@
     <BaseIconLink
       :prettier-name="'Download my resume'"
       :filename="'download.png'"
-      :link="'/CV Alexandre SOARES 2021.pdf'"
+      :link="'/CV Alexandre SOARES 2022.pdf'"
       :height="30"
       :width="30"
       :ml="20"
