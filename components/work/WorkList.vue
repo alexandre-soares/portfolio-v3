@@ -110,7 +110,7 @@ export default {
           description: 'A blog where you can see posts about video games',
           image: 'requiem-blog-featured.png',
           usedTools: ['VueJS', 'Firebase'],
-          learnedSkills: ['CRUD API', 'REST API']
+          learnedSkills: ['CRUD', 'REST API']
         },
         {
           title: 'Invoice App',
@@ -121,7 +121,7 @@ export default {
           image: 'invoice-app-feature.png',
           github: '',
           usedTools: ['VueJS', 'Firebase'],
-          learnedSkills: ['CRUD API', 'REST API']
+          learnedSkills: ['CRUD', 'REST API']
         },
         {
           title: 'Music Player App',
