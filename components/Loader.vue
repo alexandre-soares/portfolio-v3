@@ -217,7 +217,7 @@
             </g>
           </g>
         </svg>
-        <p>Loading...</p>
+        <p>Loading ...</p>
       </div>
     </div>
   </Transition>

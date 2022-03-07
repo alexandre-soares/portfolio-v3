@@ -1,12 +1,14 @@
 <template>
   <div id="luxy">
     <Loader v-if="isLoading" />
-    <Navbar />
-    <Hero />
-    <Work />
-    <Skills />
-    <About />
-    <Footer />
+    <div v-if="!isLoading">
+      <Navbar />
+      <Hero />
+      <Work />
+      <Skills />
+      <About />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -28,12 +30,14 @@ export default {
     Footer,
     Loader
   },
+  scrollToTop: true,
   data() {
     return {
       isLoading: true
     }
   },
   mounted() {
+    window.scrollTo(0, 0)
     setTimeout(() => {
       this.isLoading = false
     }, 3000)

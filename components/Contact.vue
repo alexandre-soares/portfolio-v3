@@ -1,20 +1,25 @@
 <template>
   <div class="contact">
-    <a href="mailto:contact@alexandresoares.fr">
-      <v-btn color="primary" large elevation="2" rounded
-        >✉️ contact@alexandresoares.fr</v-btn
-      >
-    </a>
+    <div class="contact__btn">
+      <a href="mailto:contact@alexandresoares.fr">
+        <v-btn color="primary" large elevation="2" rounded
+          >✉️ contact@alexandresoares.fr</v-btn
+        >
+      </a>
 
-    <div class="copy" @click="copyToClipboard()">
-      <BaseIcon
-        :prettier-name="'Copy to clipboard'"
-        :name-value="'copy.svg'"
-        :height="35"
-        :width="35"
-        :ml="20"
-        :mr="10"
-      />
+      <div class="copy" @click="copyToClipboard()">
+        <BaseIcon
+          :prettier-name="'Copy to clipboard'"
+          :name-value="'copy.svg'"
+          :height="35"
+          :width="35"
+          :ml="10"
+          :mr="10"
+          class="copy__icon"
+        />
+      </div>
+    </div>
+    <div class="contact__message">
       <span v-if="showSuccessMessage" class="alert alert--success"
         >Copied to clipboard!</span
       >
@@ -60,11 +65,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact,
 .copy {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .alert {
