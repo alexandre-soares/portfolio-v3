@@ -3,7 +3,7 @@
     <div class="navbar my-6">
       <div class="navbar__brand">
 
-        <nuxt-img src="/alex.jpg" alt="pic" />
+        <img src="/alex.jpg" alt="pic" />
         <span
           >Alexandre SOARES, <br />
           Smiling since 1996 😎</span
