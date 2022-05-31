@@ -1,7 +1,7 @@
 <template>
   <div id="luxy">
-    <Loader v-if="isLoading" />
-    <div v-if="!isLoading">
+    <Loader v-if="false" />
+    <div v-if="true">
       <Navbar />
       <Hero />
       <Work />

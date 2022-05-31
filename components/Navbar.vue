@@ -2,8 +2,8 @@
   <v-container>
     <div class="navbar my-6">
       <div class="navbar__brand">
-        <img src="@/static/alex.png" alt="pic" />
 
+        <nuxt-img src="/alex.jpg" alt="pic" />
         <span
           >Alexandre SOARES, <br />
           Smiling since 1996 😎</span
@@ -58,6 +58,7 @@ export default {
       width: 90px;
       border-radius: 50%;
       margin-right: 20px;
+      object-fit: cover;
     }
   }
 }
